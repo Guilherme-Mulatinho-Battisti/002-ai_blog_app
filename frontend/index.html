@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Blog Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+
+<body class="flex flex-col min-h-scrren bg-gray-200 font-sans antialised">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+        <div>
+            <h1 class="text-3xl font-bold">AI Blog Generator</h1>
+        </div>
+        <div>
+            <a href="#" class="text-white hover:underline">Logout</a>
+        </div>
+
+    </nav>
+
+    <br>
+    <br>
+    <!-- Main -->
+    <div class="flex-grow container mx-auto mt-10 px-4 sm:px-0">
+        <div
+            class="max-w-3xl mx-auto bg-white p-6 rounded-2xl shadow-md transition-transform transform hover:scale-105 flex flex-col">
+
+            <!--Introduction Section-->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Welcome to the ai blog generator</h2>
+                <p class="text-gray-700">
+                    Generete text based in youtube hiperlinks for your blog
+                </p>
+            </div>
+
+            <br>
+
+            <!-- Youtube Section -->
+            <div>
+                <h2 class="text-xl mb-4 font-semibold"> Enter Youtube Link</h2>
+                <div class="flex space-x-4">
+                    <input id="YoutubLink" type="url" placeholder="Paste Youtube Link ..."
+                        class="flex-grow p-2 border border-blue-300 rounded-l-md">
+                    <button id="GenereteBlogButton"
+                        class="bg-blue-600 text-white font-semibold rounded-l-md py-2 px-4 hover:bg-blue-700 transition-colors">Generate</button>
+                </div>
+            </div>
+            <!--Genereted Blog Display Section-->
+            <section class="mt-10 flex-grow">
+                <h2 class="text-xl mb-4 font-semibold"> Generated Blog Article</h2>
+                <div id="BlockContent" class="mt-2 text-gray-700 space-y-4">
+                    <!-- section for loading circle -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    
+    <footer>
+        powered
+    </footer>
+</body>
+
+</html>
